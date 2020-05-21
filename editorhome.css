@@ -1,0 +1,32 @@
+*{
+	margin:0px;
+}
+
+body{
+	background-image: url("Space.jpg");
+}
+
+.earth{
+	background-image: url("https://worldmapwithcountries.net/wp-content/uploads/2018/07/copy-satellite-world-map-12.jpg");
+	width: 60%;
+	height: 60vh;
+	background-size: cover; 
+	position: absolute;
+	left: 20%;
+	top: 15%;
+	border-radius: 48%;
+	box-shadow: inset 0px 0px 100px 2px  black;
+	animation-name: rotate;
+	animation-duration: 30s;
+	animation-delay: 0.3;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+
+}
+
+@keyframes rotate{
+	0%{
+		background-position: 500%;
+	} 
+
+}
