@@ -8,14 +8,14 @@ body{
 
 .earth{
 	background-image: url("https://worldmapwithcountries.net/wp-content/uploads/2018/07/copy-satellite-world-map-12.jpg");
-	width: 60%;
-	height: 60vh;
+	width: 40%;
+	height: 60%;
 	background-size: cover; 
 	position: absolute;
-	left: 20%;
+	left: 30%;
 	top: 15%;
-	border-radius: 48%;
-	box-shadow: inset 0px 0px 100px 2px  black;
+	border-radius: 50%;
+	box-shadow: inset 0px 0px 500px 1px transparent;
 	animation-name: rotate;
 	animation-duration: 30s;
 	animation-delay: 0.3;
@@ -26,7 +26,35 @@ body{
 
 @keyframes rotate{
 	0%{
-		background-position: 500%;
+		background-position: 100%;
 	} 
 
+}
+
+@media only screen and (min-width:400px ){
+	.earth{
+		width: 65%;
+		height: 42%;
+		left: 20%;
+		top: 30%;
+	}
+}
+
+
+@media only screen and (min-width:768px ){
+	.earth{
+		width: 55%;
+		height: 50%;
+		left: 20%;
+		top: 30%;
+	}
+}
+
+@media only screen and (min-width:1024px ){
+	.earth{
+		width: 40%;
+		height: 60%;
+		left: 30%;
+		top: 15%;
+	}
 }
